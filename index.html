@@ -1,78 +1,17 @@
 <!doctype html>
 <html lang="zh-CN">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
-  <meta name="theme-color" content="#071015">
-  <title>蛇渊回廊</title>
-  <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-  <main id="app">
-    <section class="hud" aria-label="游戏状态">
-      <div class="brand">
-        <span class="brand-mark"></span>
-        <span>蛇渊回廊</span>
-      </div>
-      <div class="stats">
-        <span id="floorStat">层 1</span>
-        <span id="hpStat">HP 3/3</span>
-        <span id="coreStat">核 0/4</span>
-        <span id="scoreStat">0</span>
-      </div>
-      <button id="pauseBtn" class="icon-btn" type="button" aria-label="暂停">Ⅱ</button>
-    </section>
-
-    <canvas id="game" aria-label="蛇渊回廊游戏画布"></canvas>
-
-    <section id="menu" class="panel overlay is-active" aria-label="主菜单">
-      <div class="title-block">
-        <p class="kicker">Roguelike Snake</p>
-        <h1>蛇渊回廊</h1>
-        <p class="subtitle">吞核心，选突变，穿过不断重组的回廊。</p>
-      </div>
-      <div class="record-row">
-        <span id="bestScoreMenu">最高 0</span>
-        <span id="bestFloorMenu">最深 1</span>
-      </div>
-      <button id="startBtn" class="primary-btn" type="button">开始</button>
-    </section>
-
-    <section id="upgradePanel" class="panel upgrade-panel" aria-label="选择突变">
-      <div class="panel-head">
-        <p class="kicker">Mutation</p>
-        <h2>选择突变</h2>
-      </div>
-      <div id="upgradeCards" class="upgrade-cards"></div>
-      <div id="upgradeCooldown" class="cooldown-bar"><span></span></div>
-    </section>
-
-    <section id="gameOverPanel" class="panel overlay" aria-label="结算">
-      <div class="panel-head">
-        <p class="kicker">Run Complete</p>
-        <h2 id="deathLine">回廊记住了这条路径。</h2>
-      </div>
-      <div class="summary-grid">
-        <div><span>分数</span><strong id="finalScore">0</strong></div>
-        <div><span>最深</span><strong id="finalFloor">1</strong></div>
-        <div><span>最长</span><strong id="finalLength">3</strong></div>
-        <div><span>核心</span><strong id="finalCores">0</strong></div>
-      </div>
-      <div id="buildList" class="build-list"></div>
-      <div class="actions">
-        <button id="retryBtn" class="primary-btn" type="button">再来一局</button>
-        <button id="backBtn" class="secondary-btn" type="button">返回</button>
-      </div>
-    </section>
-
-    <section class="controls arena-controls" aria-label="方向控制">
-      <div class="joy-pad" aria-hidden="true"><span id="joyKnob"></span></div>
-      <div class="control-hint">拖拽控蛇<br><span>松手保持方向</span></div>
-      <button id="dashBtn" class="dash-btn" type="button" aria-label="冲刺">冲</button>
-    </section>
-  </main>
-
-  <script src="./src/config.js"></script>
-  <script src="./src/game.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+    <meta name="theme-color" content="#05070b" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>Serpent Rogue: Abyss Bloom</title>
+    <link rel="icon" href="data:," />
+    <script type="module" crossorigin src="/assets/index-DZSrOGK3.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-wlY6jt83.css">
+  </head>
+  <body>
+    <div id="game"></div>
+  </body>
 </html>
